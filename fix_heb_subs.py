@@ -1,8 +1,8 @@
-SUBS_FILE = "mortdecai.srt"
+SUBS_FILE = "billaboards.srt"
 NEW_FILE = SUBS_FILE + ".fixed.srt"
 
 def isPunctuation(char):
-    return char == "." or char == "!" or char == "," or char == "?"
+    return char == "." or char == "!" or char == "," or char == "?" or char == "\"" or char == "\'" or char == ":"
 
 def moveFirstCharToEnd(line):
     return line[1:] + line[0]
